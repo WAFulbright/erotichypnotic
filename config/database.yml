@@ -12,7 +12,7 @@
 #       Install PostgreSQL and put its /bin directory on your path.
 #
 # Configure Using Gemfile
-  gem='pg'
+  #gem='pg'
 #
 default: &default
   adapter: postgresql
@@ -22,9 +22,12 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
-  database: pg
 
+
+  <<: *default
+  database: erotichypnotic
+
+  host : localhost
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is

@@ -1,3 +1,4 @@
 class HomepageController < ApplicationController
-  def='index.html.erb'
+  def index
+  end
 end
